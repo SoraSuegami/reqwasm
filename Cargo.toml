@@ -9,15 +9,13 @@ description = "HTTP requests library for WASM Apps"
 readme = "README.md"
 keywords = ["requests", "http", "wasm", "websockets"]
 categories = ["wasm", "web-programming::http-client", "api-bindings"]
-exclude = [
-    ".idea",
-]
+exclude = [".idea"]
 
 [package.metadata.docs.rs]
 all-features = true
 
 [dependencies]
-gloo-net = "0.1.0"
+gloo-net = "0.5.0"
 
 [features]
 default = ["json", "websocket", "http"]
